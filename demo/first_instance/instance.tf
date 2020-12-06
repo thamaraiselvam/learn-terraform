@@ -1,10 +1,10 @@
 provider "aws"{
-    access_key = var.AWS_ACCESS_TOKEN
-    secret_key = var.AWS_SECRET_TOKEN
+    access_key = var.AWS_ACCESS_KEY
+    secret_key = var.AWS_SECRET_KEY
     region = var.region
 }
 
 resource "aws_instance" "example" {
-    ami = "ami-005634d2b7691f303"
+    ami = lookup(var.AMIS, var.region)
     instance_type = "t2.micro"
 }
