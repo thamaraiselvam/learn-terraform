@@ -29,4 +29,6 @@ override.tf.json
 # example: *tfplan*
 
 #ignore all env files
-**/.envrc
+**/terraform.tfvars
+
+

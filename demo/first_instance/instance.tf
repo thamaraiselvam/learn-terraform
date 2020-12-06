@@ -1,21 +1,7 @@
 provider "aws"{
-    access_key = var.access_key
-    secret_key = var.secret_key
+    access_key = var.AWS_ACCESS_TOKEN
+    secret_key = var.AWS_SECRET_TOKEN
     region = var.region
-}
-
-
-variable "region" {
-    type = string
-    default = "ap-south-1"
-}
-
-variable "access_key" {
-    type = string
-}
-
-variable "secret_key" {
-    type = string
 }
 
 resource "aws_instance" "example" {
