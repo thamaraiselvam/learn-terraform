@@ -1,2 +1,0 @@
-aws_instance.example.private_ip
-172.31.37.151
