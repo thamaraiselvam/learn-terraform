@@ -33,3 +33,6 @@ override.tf.json
 
 #ignore key files
 **/mykey*
+
+**/.vscode
+
