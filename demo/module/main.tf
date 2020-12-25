@@ -1,5 +1,5 @@
 module "datasource_module" {
 
-source = "./../datasource"
+  source = "./../datasource"
 
 }
